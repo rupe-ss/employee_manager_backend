@@ -9,7 +9,7 @@ public class CorsConfig implements WebMvcConfigurer{
 	
 	@Override
 	public void addCorsMappings(CorsRegistry registry) {
-		 String[] origins = new String[] {"http://localhost:4200", "https://employee-manager-angular.web.app/", "https://employee-manager-angular.vercel.app"};
+		 String[] origins = new String[] {"http://localhost:4200", "https://front-end-ecs.vercel.app/"};
 		registry.addMapping("/**")
 		.allowedHeaders("*")
 		.allowedMethods("GET","POST","PUT","DELETE")
